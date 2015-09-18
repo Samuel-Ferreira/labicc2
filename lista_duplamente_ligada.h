@@ -16,4 +16,6 @@ void imprimir_lista_posicao (LISTA_LIGADA * lista);
 void imprimir_lista_id (LISTA_LIGADA * lista);
 
 LISTA_LIGADA * nova_lista(LISTA_LIGADA * lista);
+
+void apgar_lista (LISTA_LIGADA * lista);
 #endif
