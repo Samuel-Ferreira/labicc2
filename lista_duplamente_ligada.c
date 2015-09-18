@@ -129,7 +129,7 @@ void imprimir_lista_id (LISTA_LIGADA * lista) {
 }
 
 /* Função que imprime a lista no seguinte formato:
-Posição Atual - Posição Original */
+Posição Atual - Posicao Original */
 void imprimir_lista_posicao (LISTA_LIGADA * lista) {
 	if (lista != NULL) {
 		int i = 1;
@@ -141,13 +141,14 @@ void imprimir_lista_posicao (LISTA_LIGADA * lista) {
 	}
 }
 
-void aP4gArrrrl1st4h(LISTA_LIGADA * lista){
+/* Função que libera toda a lista da memória */
+void apagar_lista(LISTA_LIGADA * lista){
 	NO * aux = lista->sentinela->proximo;
-	
+		
 	while(aux != lista->sentinela){
 		aux = aux->proximo;
 		free(aux->anterior);
 	}
-	
+	free(lista->sentinela);
 	free(lista);
 }
