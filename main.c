@@ -24,6 +24,9 @@ int main (void) {
 
 	printf("\nResultado esperado fila geral\n");
 	imprimir_lista_posicao(lista);
+	
+	apagar_lista(lista);
+	apagar_lista(lista_prioridade);
 
 	return 0;
 }   
