@@ -127,7 +127,13 @@ void imprimir_lista_id (LISTA_LIGADA * lista) {
 		}
 	}
 }
+/*
 
+funcao que imprime os elementos da lista de maneira sequencial
+
+é nois
+
+*/
 void imprimir_lista_posicao (LISTA_LIGADA * lista) {
 	if (lista != NULL) {
 		int i = 1;
