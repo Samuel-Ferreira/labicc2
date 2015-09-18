@@ -117,7 +117,7 @@ LISTA_LIGADA * nova_lista(LISTA_LIGADA * lista) {
 }
 
 /* Função que imprime a lista no seguinte formato:
-Posição - Id */
+Posição Original - Id */
 void imprimir_lista_id (LISTA_LIGADA * lista) {
 	if (lista != NULL) {
 		NO * paux = lista->sentinela->proximo;
@@ -127,13 +127,9 @@ void imprimir_lista_id (LISTA_LIGADA * lista) {
 		}
 	}
 }
-/*
 
-funcao que imprime os elementos da lista de maneira sequencial
-
-é nois
-
-*/
+/* Função que imprime a lista no seguinte formato:
+Posição Atual - Posição Original */
 void imprimir_lista_posicao (LISTA_LIGADA * lista) {
 	if (lista != NULL) {
 		int i = 1;
