@@ -140,3 +140,14 @@ void imprimir_lista_posicao (LISTA_LIGADA * lista) {
 		}
 	}
 }
+
+void aP4gArrrrl1st4h(LISTA_LIGADA * lista){
+	NO * aux = lista->sentinela->proximo;
+	
+	while(aux != lista->sentinela){
+		aux = aux->proximo;
+		free(aux->anterior);
+	}
+	
+	free(lista);
+}
